@@ -1,5 +1,6 @@
-🎓# BrightPath Academy - Student Performance Prediction System
-📌 Problem Statement
+# 🎓 BrightPath Academy - Student Performance Prediction System
+
+### 📌 Problem Statement:
 BrightPath Academy collects extensive data on students' academic and extracurricular activities. However, the institution lacks a standardized platform to extract meaningful insights from this data. Key challenges include:
 
 Inability to identify at-risk students in a timely manner.
@@ -10,7 +11,7 @@ Limited understanding of the relationship between extracurriculars and academic 
 
 Underutilization of a rich reserve of student data.
 
-💡 Solution
+### 💡 Solution:
 This project introduces a machine learning-based solution to predict academic performance and recommend individualized interventions. Using data from the Student_performance_data.csv, we:
 
 Predict academic risk levels.
@@ -21,16 +22,16 @@ Compare multiple classification algorithms.
 
 Deploy the most effective model through a web app built with Dash and hosted on Render.
 
-🔍 Hypotheses
-Hypothesis	Description
+### 🔍 Hypotheses:
+Hypothesis	Description:
 Study Time	More study time correlates with higher GradeClass.
 Absences	More absences correlate with lower GradeClass.
 Extracurriculars	Participation improves GradeClass.
 Parental Support	Higher support is linked to better grades.
 Tutoring	Tutored students perform better than untutored ones.
 
-⚙️ System Setup
-🔧 Tools Used
+### ⚙️ System Setup:
+### 🔧 Tools Used:
 Visual Studio Code
 
 Python
@@ -56,17 +57,17 @@ mord – Ordinal logistic regression
 
 joblib – Model persistence
 
-📂 Data Handling
-📥 Data Import
+### 📂 Data Handling
+### 📥 Data Import
 python
 Copy
 Edit
 import pandas as pd
 df = pd.read_csv("Student_performance_data.csv")
-🧠 Data Understanding
+### 🧠 Data Understanding
 Used head(), info(), and describe() to explore dataset.
 
-🧼 Cleaning
+### 🧼 Cleaning
 Removed irrelevant fields (e.g., StudentID)
 
 Handled missing values and outliers (using IQR)
@@ -83,7 +84,7 @@ D: 2.0–2.49
 
 F: < 2.0
 
-📊 Exploratory Data Analysis (EDA)
+### 📊 Exploratory Data Analysis (EDA)
 ✅ Univariate
 Distribution analysis using histograms and boxplots
 
@@ -96,7 +97,7 @@ Point-biserial correlation for binary vs. ordinal
 
 Heatmaps for categorical comparisons
 
-🤖 Machine Learning Models
+### 🤖 Machine Learning Models
 🔸 Logistic Regression
 Used StandardScaler, OrdinalEncoder, and SMOTE for balancing.
 
@@ -129,7 +130,7 @@ Transformed ordinal target to binary thresholds
 
 Evaluated using classification report and confusion matrix
 
-🌐 Deployment
+### 🌐 Deployment
 Platform
 Web App built with Dash and deployed to Render
 
@@ -145,7 +146,7 @@ Model saved as .h5 file for loading into the app
 
 Auto-deployment via GitHub-Render integration
 
-📁 Project Structure
+### 📁 Project Structure
 graphql
 Copy
 Edit
@@ -165,7 +166,7 @@ Edit
 ├── requirements.txt        # Libraries needed for deployment
 ├── README.md               # Project overview
 └── .render.yaml            # Render deployment config
-📈 Evaluation Metrics
+### 📈 Evaluation Metrics
 Precision
 
 Recall
@@ -178,10 +179,6 @@ Confusion Matrix
 
 Each model’s performance was compared using the metrics above to determine the best model.
 
-🧪 Conclusion
+### 🧪 Conclusion
 This project provides a robust ML pipeline to predict student academic risk and recommend proactive support. By deploying our most accurate and interpretable model with a user-friendly web app, BrightPath Academy can enhance its intervention strategies and improve student outcomes.
 
-🙌 Contributors
-Project Team @ BrightPath Academy
-
-ML & Deployment Lead: [Your Name]
