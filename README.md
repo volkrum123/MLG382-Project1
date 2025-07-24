@@ -1,4 +1,4 @@
-🎓 #BrightPath Academy - Student Performance Prediction System
+🎓# BrightPath Academy - Student Performance Prediction System
 📌 Problem Statement
 BrightPath Academy collects extensive data on students' academic and extracurricular activities. However, the institution lacks a standardized platform to extract meaningful insights from this data. Key challenges include:
 
